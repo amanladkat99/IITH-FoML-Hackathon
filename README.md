@@ -1,10 +1,60 @@
-# IITH-FoML-Hackathon
-This was a graded Hackathon conducted on Kaggle for a Machine Learning Course during my 1st Semester at IIT Hyderabad. 
+# 🚗 Driver Fault Classification – Kaggle Hackathon
 
-Problem Description
-For this semester, we have created a Kaggle challenge named “Is the driver at fault?” exclusively for you. 
+This was a graded Hackathon conducted on Kaggle for a Machine Learning Course during my 1st Semester at IIT Hyderabad. This project tackles a **binary classification problem**: to predict whether a driver is **at fault** or **not at fault** in an accident, using a **tabular dataset** with 42 features. The solution was developed and submitted as part of a **Kaggle hackathon challenge**.
+
+---
+
+## 🎯 Objective
+
+Develop a machine learning model that accurately classifies driver fault status using structured data.  
+**Target variable:** `Fault` (Yes / No)
 Here is the link: https://www.kaggle.com/t/53d1fd0d4cc8422bbdf9de2ea61f7e81.
 
-This challenge is designed based on the Driver Accident tabular Dataset which is provided in the link. Kaggle is a crowd-sourced platform to attract, nurture, train and challenge data scientists from all around the world to solve data science, machine learning and predictive analytics problems.
+---
 
-A driver is at fault or no fault based on several direct and indirect variables specific to the accident and beyond. The dataset has 42 features and almost all of them are categorical. Your aim is to train an ML algorithm that optimizes the evaluation metric i.e Accuracy. Train.csv file has the training data with Fault Label and input features. Test.csv file has unlabeled data. The detailed description of the challenge and dataset can be found in the aforementioned link.
+## 📊 Dataset Overview
+
+- **Total Features:** 42
+  - 37 categorical features
+  - 5 numerical features
+- **Size:** Several thousand rows (realistic accident scenarios)
+- **Source:** Kaggle (Driver Accident Dataset)
+
+---
+
+## ⚙️ ML Pipeline
+
+### 1️⃣ Data Preprocessing
+- One-hot encoding for categorical variables
+- Standardization/normalization for numerical variables
+- Null value handling and outlier inspection
+
+### 2️⃣ Feature Selection
+- Removed irrelevant or low-variance features
+- Used correlation analysis and tree-based feature importances
+
+### 3️⃣ Model Training & Evaluation
+Models used:
+- 🌲 `RandomForestClassifier`
+- 🌿 `GradientBoostingClassifier`
+- 🚀 `XGBoostClassifier` *(Best Performer)*
+
+✅ Final Accuracy:
+- **XGBoostClassifier** achieved ~**88% accuracy** after hyperparameter tuning.
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Component            | Library / Tool        |
+|---------------------|-----------------------|
+| Language            | Python                |
+| ML Frameworks       | scikit-learn, XGBoost, Random Forest |
+| Data Handling       | Pandas, NumPy         |
+| Visualization       | Matplotlib, Seaborn   |
+| Tuning              | GridSearchCV, RandomizedSearchCV |
+
+---
+
+
+
