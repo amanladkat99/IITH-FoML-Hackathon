@@ -8,6 +8,7 @@ This was a graded Hackathon conducted on Kaggle for a Machine Learning Course du
 
 Develop a machine learning model that accurately classifies driver fault status using structured data.  
 **Target variable:** `Fault` (Yes / No)
+
 Here is the link: https://www.kaggle.com/t/53d1fd0d4cc8422bbdf9de2ea61f7e81.
 
 ---
